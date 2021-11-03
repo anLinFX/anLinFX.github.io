@@ -2,24 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>天干地支.md | Hexo</title>
+  <title>天干地支.md | 萧寒个人站</title>
   <meta name="keywords" content="">
-  <meta name="description" content="天干地支.md | Hexo">
+  <meta name="description" content="天干地支.md | 萧寒个人站">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="Arch Linux SetupArch Linux初始化，安装好常用软件及suckless dwm窗口管理器，达到开箱即用的效果，不用再解决一个个依赖、配置问题 &#x2F;photo&#x2F;webwxgeticon.jpg 同时给对Arch Linux或者Tiling Window Manager感兴趣者提供一个示例，以减少解决繁琐的依赖&#x2F;配置问题的时间 （配置国内源，并尝试使用一些github仓库的gite">
+<meta name="description" content="Arch Linux Setup!Arch Linux初始化，安装好常用软件及suckless dwm窗口管理器，达到开箱即用的效果，不用再解决一个个依赖、配置问题 同时给对Arch Linux或者Tiling Window Manager感兴趣者提供一个示例，以减少解决繁琐的依赖&#x2F;配置问题的时间 （配置国内源，并尝试使用一些github仓库的gitee镜像版本） 软件列表   软件名 介绍">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Archlinux DWM软件窗口">
 <meta property="og:url" content="https://anlinfx.github.io/2021/11/04/Archlinux-DWM%E8%BD%AF%E4%BB%B6%E7%AA%97%E5%8F%A3-1/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Arch Linux SetupArch Linux初始化，安装好常用软件及suckless dwm窗口管理器，达到开箱即用的效果，不用再解决一个个依赖、配置问题 &#x2F;photo&#x2F;webwxgeticon.jpg 同时给对Arch Linux或者Tiling Window Manager感兴趣者提供一个示例，以减少解决繁琐的依赖&#x2F;配置问题的时间 （配置国内源，并尝试使用一些github仓库的gite">
+<meta property="og:site_name" content="萧寒个人站">
+<meta property="og:description" content="Arch Linux Setup!Arch Linux初始化，安装好常用软件及suckless dwm窗口管理器，达到开箱即用的效果，不用再解决一个个依赖、配置问题 同时给对Arch Linux或者Tiling Window Manager感兴趣者提供一个示例，以减少解决繁琐的依赖&#x2F;配置问题的时间 （配置国内源，并尝试使用一些github仓库的gitee镜像版本） 软件列表   软件名 介绍">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/lin/AppData/Roaming/Typora/typora-user-images/image-20211103235933401.png">
 <meta property="article:published_time" content="2021-11-03T16:02:27.000Z">
-<meta property="article:modified_time" content="2021-11-03T16:16:33.672Z">
-<meta property="article:author" content="anLinFX">
+<meta property="article:modified_time" content="2021-11-03T16:29:54.029Z">
+<meta property="article:author" content="萧寒">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/lin/AppData/Roaming/Typora/typora-user-images/image-20211103235933401.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -67,7 +65,7 @@
          src="/img/avatar.jpg"/>
 </a>
 <div class="author">
-    <span>anLinFX</span>
+    <span>萧寒</span>
 </div>
 
 <div class="icon">
@@ -373,7 +371,7 @@
                 <a class="dynamic-menu "
                    target="_self"
                    
-                   href="http://anlinfx.github.io">anLin</a>
+                   href="https://www.bilibili.com/">小破站</a>
         
             
                 <a class="dynamic-menu "
@@ -1586,10 +1584,6 @@
 </article>
 
 
-<p>
-    <a  class="dashang" onclick="dashangToggle()">💰</a>
-</p>
-
 
 
 
@@ -1615,24 +1609,6 @@
     </div>
 </div>
 
-<div class="hide_box" onclick="dashangToggle()"></div>
-<div class="shang_box">
-    <a class="shang_close"  onclick="dashangToggle()">×</a>
-    <div class="shang_tit">
-        <p>Help us with donation</p>
-    </div>
-    <div class="shang_payimg">
-        <div class="pay_img">
-            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
-            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
-        </div>
-    </div>
-    <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
-    </div>
-</div>
-
-
 </body>
 <script src="/js/jquery.pjax.js?v=1.1.0" ></script>
 
@@ -1646,14 +1622,6 @@
         
 
         /*渲染打赏样式*/
-        
-        $("input[name=pay]").on("click", function () {
-            if($("input[name=pay]:checked").val()=="weixin"){
-                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
-            } else {
-                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
-            }
-        })
         
 
         /*高亮代码块行号*/
@@ -1686,11 +1654,6 @@
     }
 
     /*打赏页面隐藏与展示*/
-    
-    function dashangToggle() {
-        $(".shang_box").fadeToggle();
-        $(".hide_box").fadeToggle();
-    }
     
 
 </script>
@@ -1841,7 +1804,7 @@
     
     
     
-    <a class="dynamic-menu " target="_self"   href="http://anlinfx.github.io">anLin</a>
+    <a class="dynamic-menu " target="_self"   href="https://www.bilibili.com/">小破站</a>
     
     
     <a class="dynamic-menu " target="_blank"  href="https://ailongmiao.com">龙喵</a>
