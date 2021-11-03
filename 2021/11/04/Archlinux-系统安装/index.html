@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Archlinux DWM软件窗口 | 萧寒个人站</title>
+  <title>Archlinux-系统安装 | 萧寒个人站</title>
   <meta name="keywords" content=" linux ">
-  <meta name="description" content="Archlinux DWM软件窗口 | 萧寒个人站">
+  <meta name="description" content="Archlinux-系统安装 | 萧寒个人站">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="系统安装1. 修改tty界面下的字体 所有字体都存放在&#x2F;usr&#x2F;share&#x2F;kbd&#x2F;consolefonts目录下。  这里将其设置为： $ setfont &#x2F;usr&#x2F;share&#x2F;kbd&#x2F;consolefonts&#x2F;LatGrkCyr-12*22.psfu.gz    2. 连接网络2.1 无线网络2.1.1 扫描当前互联网设备$ ip link  2.1.2 启用设备$ ip link set 设">
 <meta property="og:type" content="article">
@@ -571,9 +571,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Archlinux-DWM软件窗口-1" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Archlinux-系统安装" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Archlinux DWM软件窗口</h1>
+        <h1 class="article-title">Archlinux-系统安装</h1>
     
     <div class="article-meta">
         
@@ -600,12 +600,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-11-04 00:29:54'>2021-11-04 00:02</time>
+            Created At : <time class="date" title='Updated At: 2021-11-04 01:32:19'>2021-11-04 01:30</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:822</span>
+        <span>Count:1.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -624,7 +624,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Arch-Linux-Setup"><span class="toc-text">Arch Linux Setup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%88%97%E8%A1%A8"><span class="toc-text">软件列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8"><span class="toc-text">安装使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Arch-Linux%E6%B5%8B%E8%AF%95%E6%83%85%E5%86%B5"><span class="toc-text">Arch Linux测试情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%B8%A3%E8%B0%A2"><span class="toc-text">鸣谢</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85"><span class="toc-text">系统安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BF%AE%E6%94%B9tty%E7%95%8C%E9%9D%A2%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93"><span class="toc-text">1. 修改tty界面下的字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C"><span class="toc-text">2. 连接网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C"><span class="toc-text">2.1 无线网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E6%89%AB%E6%8F%8F%E5%BD%93%E5%89%8D%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%BE%E5%A4%87"><span class="toc-text">2.1.1 扫描当前互联网设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E5%90%AF%E7%94%A8%E8%AE%BE%E5%A4%87"><span class="toc-text">2.1.2 启用设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-3-%E6%89%AB%E6%8F%8F%E5%BD%93%E5%89%8D%E8%AE%BE%E5%A4%87%E4%B8%8B%E7%9A%84WiFi%E5%88%97%E8%A1%A8%E5%B9%B6%E5%BE%97%E5%88%B0%E6%89%80%E6%9C%89WiFi%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-text">2.1.3 扫描当前设备下的WiFi列表并得到所有WiFi的名字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-4-%E4%BD%BF%E7%94%A8wpa-supplicant%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C%E5%B9%B6%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C"><span class="toc-text">2.1.4 使用wpa_supplicant连接网络并后台运行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-5-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8DIP%E5%9C%B0%E5%9D%80"><span class="toc-text">2.1.5 动态分配IP地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%9C%89%E7%BA%BF%E7%BD%91%E7%BB%9C"><span class="toc-text">2.2 有线网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-%E5%90%AF%E7%94%A8%E8%AE%BE%E5%A4%87"><span class="toc-text">2.2.1 启用设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8DIP%E5%9C%B0%E5%9D%80"><span class="toc-text">2.2.2 动态分配IP地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%B5%8B%E8%AF%95"><span class="toc-text">2.3 测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9B%B4%E6%AD%A3%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4"><span class="toc-text">3. 更正系统时间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA"><span class="toc-text">4. 硬盘分区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%9F%A5%E7%9C%8B%E7%8E%B0%E6%9C%89%E7%9A%84%E7%A3%81%E7%9B%98"><span class="toc-text">4.1 查看现有的磁盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E8%BF%9B%E5%85%A5%E7%A3%81%E7%9B%98%E7%BC%96%E8%BE%91"><span class="toc-text">4.2 进入磁盘编辑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E5%AE%9A%E4%B9%89%E5%88%86%E5%8C%BA%E6%A0%BC%E5%BC%8F"><span class="toc-text">4.3 定义分区格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E6%89%93%E5%BC%80SWAP"><span class="toc-text">4.4 打开SWAP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%85%8D%E7%BD%AEpacman"><span class="toc-text">5. 配置pacman</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E4%BD%BF%E7%94%A8pacstrap%E5%AE%89%E8%A3%85Arch-Linux%E5%9F%BA%E7%A1%80%E8%87%B3%E7%A3%81%E7%9B%98%E4%B8%AD"><span class="toc-text">6. 使用pacstrap安装Arch Linux基础至磁盘中</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%9A%84%E7%A3%81%E7%9B%98"><span class="toc-text">6.1 查看当前的磁盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98"><span class="toc-text">6.2 挂载磁盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85"><span class="toc-text">6.3 开始安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-%E7%94%9F%E6%88%90%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="toc-text">6.4 生成挂载文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E4%BD%BF%E7%94%A8arch-chroot%E5%AF%B9%E5%AE%89%E8%A3%85%E5%A5%BD%E7%9A%84%E7%B3%BB%E7%BB%9F%E8%BF%9B%E8%A1%8C%E9%85%8D%E7%BD%AE"><span class="toc-text">7. 使用arch-chroot对安装好的系统进行配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E8%BF%9B%E5%85%A5arch-chroot"><span class="toc-text">7.1 进入arch-chroot</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA%E5%92%8C%E6%97%B6%E9%97%B4"><span class="toc-text">7.2 设置时区和时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E7%BC%96%E8%BE%91%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">7.3 编辑本地化的文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-%E7%94%9F%E6%88%90%E6%9C%AC%E5%9C%B0%E5%8C%96"><span class="toc-text">7.4 生成本地化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-%E8%AE%BE%E7%BD%AE%E8%AF%AD%E8%A8%80"><span class="toc-text">7.5 设置语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-6-%E5%8F%AF%E9%80%89-%E8%AE%BE%E7%BD%AE%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80%E5%92%8C%E9%94%AE%E4%BD%8D%E7%BB%91%E5%AE%9A"><span class="toc-text">7.6 (可选)设置键盘布局和键位绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-7-%E7%BC%96%E8%BE%91%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">7.7 编辑网络相关的文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-8-%E6%9B%B4%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81"><span class="toc-text">7.8 更改root用户密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-9-%E5%AE%89%E8%A3%85grub%E7%9B%B8%E5%85%B3"><span class="toc-text">7.9 安装grub相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-10-%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E5%B7%A5%E5%85%B7"><span class="toc-text">7.10 安装基础工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-11-%E9%87%8D%E5%90%AF%EF%BC%8C%E5%AE%8C%E6%88%90%E5%AE%89%E8%A3%85"><span class="toc-text">7.11 重启，完成安装</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -640,213 +640,131 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Arch-Linux-Setup"><a href="#Arch-Linux-Setup" class="headerlink" title="Arch Linux Setup"></a>Arch Linux Setup</h1><p>!Arch Linux初始化，安装好常用软件及<a target="_blank" rel="noopener" href="https://suckless.org/">suckless dwm</a>窗口管理器，达到开箱即用的效果，不用再解决一个个依赖、配置问题</p>
-<p>同时给对Arch Linux或者<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tiling_window_manager">Tiling Window Manager</a>感兴趣者提供一个示例，以减少<strong>解决繁琐的依赖/配置问题</strong>的时间</p>
-<p>（配置国内源，并尝试使用一些github仓库的gitee镜像版本）</p>
-<h2 id="软件列表"><a href="#软件列表" class="headerlink" title="软件列表"></a>软件列表</h2><table>
-<thead>
-<tr>
-<th align="left">软件名</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">git</td>
-<td>内容版本管理</td>
-</tr>
-<tr>
-<td align="left">xrandr</td>
-<td>使用其中的xrandr调整屏幕分辨率</td>
-</tr>
-<tr>
-<td align="left">picom</td>
-<td>软件透明化(见效果图)</td>
-</tr>
-<tr>
-<td align="left">sxiv</td>
-<td>查看图片</td>
-</tr>
-<tr>
-<td align="left">xwallpaper</td>
-<td>设置壁纸</td>
-</tr>
-<tr>
-<td align="left">scrot</td>
-<td>截图工具</td>
-</tr>
-<tr>
-<td align="left">pulseaudio</td>
-<td>音量调节</td>
-</tr>
-<tr>
-<td align="left">ranger</td>
-<td>文件管理</td>
-</tr>
-<tr>
-<td align="left">firefox</td>
-<td>火狐浏览器</td>
-</tr>
-<tr>
-<td align="left">fcitx/fcitx-sogoupinyin</td>
-<td>中文输入法</td>
-</tr>
-<tr>
-<td align="left">nerd-fonts-hack</td>
-<td>显示emoji，unicode等字符</td>
-</tr>
-<tr>
-<td align="left">unzip</td>
-<td>解压缩工具</td>
-</tr>
-<tr>
-<td align="left">rg</td>
-<td>模糊搜索工具</td>
-</tr>
-<tr>
-<td align="left">neovim</td>
-<td>代码编辑器</td>
-</tr>
-<tr>
-<td align="left">autojump</td>
-<td>快速目录跳转</td>
-</tr>
-<tr>
-<td align="left">ohmyzsh</td>
-<td>shell环境</td>
-</tr>
-<tr>
-<td align="left">zsh-autosuggestions</td>
-<td>zsh命令补全</td>
-</tr>
-<tr>
-<td align="left">clipmenu</td>
-<td>剪贴板历史</td>
-</tr>
-<tr>
-<td align="left">neofetch</td>
-<td>终端显示发行版与系统信息</td>
-</tr>
-<tr>
-<td align="left">screenkey</td>
-<td>按键操作可视化</td>
-</tr>
-<tr>
-<td align="left">tldr</td>
-<td>快捷命令行工具使用提示</td>
-</tr>
-<tr>
-<td align="left">glances</td>
-<td>查看系统运行情况</td>
-</tr>
-<tr>
-<td align="left">typora</td>
-<td>markdown编辑器</td>
-</tr>
-</tbody></table>
-<p>suckless的软件及壁纸来自<a target="_blank" rel="noopener" href="https://gitlab.com/dwt1">DistroTube</a></p>
-<table>
-<thead>
-<tr>
-<th>软件名</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a target="_blank" rel="noopener" href="https://gitlab.com/dwt1/dwm-distrotube">dwm</a></td>
-<td>Tiling Window Manager</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://gitlab.com/dwt1/dmenu-distrotube">dmenu</a></td>
-<td>dwm下的应用启动工具</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://gitlab.com/dwt1/dwmblocks-distrotube">dwmblocks</a></td>
-<td>dwm状态栏显示配置</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://gitlab.com/dwt1/st-distrotube">st</a></td>
-<td>终端</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://gitlab.com/dwt1/wallpapers">wallpapers</a></td>
-<td>壁纸</td>
-</tr>
-</tbody></table>
-<h2 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h2><p><strong>前置依赖</strong>    </p>
-<p>运行脚本前需要:</p>
+        <h1 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h1><h2 id="1-修改tty界面下的字体"><a href="#1-修改tty界面下的字体" class="headerlink" title="1. 修改tty界面下的字体"></a>1. 修改<code>tty</code>界面下的字体</h2><ul>
+<li><p>所有字体都存放在<code>/usr/share/kbd/consolefonts</code>目录下。</p>
+</li>
+<li><p>这里将其设置为：</p>
+<pre><code class="bash">$ setfont /usr/share/kbd/consolefonts/LatGrkCyr-12*22.psfu.gz
+</code></pre>
+</li>
+</ul>
+<h2 id="2-连接网络"><a href="#2-连接网络" class="headerlink" title="2. 连接网络"></a>2. 连接网络</h2><h3 id="2-1-无线网络"><a href="#2-1-无线网络" class="headerlink" title="2.1 无线网络"></a>2.1 无线网络</h3><h4 id="2-1-1-扫描当前互联网设备"><a href="#2-1-1-扫描当前互联网设备" class="headerlink" title="2.1.1 扫描当前互联网设备"></a>2.1.1 扫描当前互联网设备</h4><pre><code class="bash">$ ip link
+</code></pre>
+<h4 id="2-1-2-启用设备"><a href="#2-1-2-启用设备" class="headerlink" title="2.1.2 启用设备"></a>2.1.2 启用设备</h4><pre><code class="bash">$ ip link set 设备名 up
+</code></pre>
+<h4 id="2-1-3-扫描当前设备下的WiFi列表并得到所有WiFi的名字"><a href="#2-1-3-扫描当前设备下的WiFi列表并得到所有WiFi的名字" class="headerlink" title="2.1.3 扫描当前设备下的WiFi列表并得到所有WiFi的名字"></a>2.1.3 扫描当前设备下的WiFi列表并得到所有WiFi的名字</h4><pre><code class="bash">$ iwlist 设备名 scan | grep ESSID
+</code></pre>
+<h4 id="2-1-4-使用wpa-supplicant连接网络并后台运行"><a href="#2-1-4-使用wpa-supplicant连接网络并后台运行" class="headerlink" title="2.1.4 使用wpa_supplicant连接网络并后台运行"></a>2.1.4 使用<code>wpa_supplicant</code>连接网络并后台运行</h4><pre><code class="bash">$ wpa_passphrase 网络名 密码 &gt; internet.conf
+$ wpa_supplicant -c internet.conf -i 设备名 &amp;
+</code></pre>
+<h4 id="2-1-5-动态分配IP地址"><a href="#2-1-5-动态分配IP地址" class="headerlink" title="2.1.5 动态分配IP地址"></a>2.1.5 动态分配IP地址</h4><pre><code class="bash">$ dhcpcd &amp;
+</code></pre>
+<h3 id="2-2-有线网络"><a href="#2-2-有线网络" class="headerlink" title="2.2 有线网络"></a>2.2 有线网络</h3><h4 id="2-2-1-启用设备"><a href="#2-2-1-启用设备" class="headerlink" title="2.2.1 启用设备"></a>2.2.1 启用设备</h4><pre><code class="bash">$ ip link set 设备名 up
+</code></pre>
+<h4 id="2-2-2-动态分配IP地址"><a href="#2-2-2-动态分配IP地址" class="headerlink" title="2.2.2 动态分配IP地址"></a>2.2.2 动态分配IP地址</h4><pre><code class="bash">$ dhcpcd &amp;
+</code></pre>
+<h3 id="2-3-测试"><a href="#2-3-测试" class="headerlink" title="2.3 测试"></a>2.3 测试</h3><pre><code class="bash">$ ping www.baidu.com
+</code></pre>
+<h2 id="3-更正系统时间"><a href="#3-更正系统时间" class="headerlink" title="3. 更正系统时间"></a>3. 更正系统时间</h2><pre><code class="bash">$ timedatectl set-ntp true
+</code></pre>
+<h2 id="4-硬盘分区"><a href="#4-硬盘分区" class="headerlink" title="4. 硬盘分区"></a>4. 硬盘分区</h2><ul>
+<li>这里我采用的启动方式是<code>UEFI + GPT</code>，其他的启动方式请参考<a href="system-installation-trouble-shooting.md/#2-%E5%85%B3%E4%BA%8Egrub%E5%92%8C%E5%88%86%E5%8C%BA">下文</a>。</li>
+</ul>
+<h3 id="4-1-查看现有的磁盘"><a href="#4-1-查看现有的磁盘" class="headerlink" title="4.1 查看现有的磁盘"></a>4.1 查看现有的磁盘</h3><pre><code class="bash">$ fdisk -l
+</code></pre>
+<h3 id="4-2-进入磁盘编辑"><a href="#4-2-进入磁盘编辑" class="headerlink" title="4.2 进入磁盘编辑"></a>4.2 进入磁盘编辑</h3><pre><code class="bash">$ fdisk /dev/sda   # /dev/sda为磁盘设备的位置
+$ g   # 清除原有分区并创建一个GPT分区表
+$ n   # 创建一个新的分区/dev/sda1 -- 引导分区
+      # 接下来选择分区的编号、起始位置、终止位置（分区大小，可用例如“+300M”的形式）
+$ n   # 创建一个新的分区/dev/sda3 -- SWAP分区（用于保存内存中的文件以及作为内存的扩展，此
+      # 分区不需要太大）
+      # 这里我大小设置为1G
+$ n   # 创建一个新的分区/dev/sda2 -- 主分区
+      # 大小我设置为磁盘的所有剩余空间
+$ p   # 查看待写入的分区结果
+$ w   # 写入
+</code></pre>
+<h3 id="4-3-定义分区格式"><a href="#4-3-定义分区格式" class="headerlink" title="4.3 定义分区格式"></a>4.3 定义分区格式</h3><pre><code class="bash">$ mkfs.fat -F32 /dev/sda1   # /dev/sda1为引导分区
+$ mkfs.ext4 /dev/sda2       # /dev/sda2为主分区
+$ mkswap /dev/sda3          # /dev/sda3为SWAP分区
+</code></pre>
+<h3 id="4-4-打开SWAP"><a href="#4-4-打开SWAP" class="headerlink" title="4.4 打开SWAP"></a>4.4 打开<code>SWAP</code></h3><pre><code class="bash">$ swapon /dev/sda3
+</code></pre>
+<h2 id="5-配置pacman"><a href="#5-配置pacman" class="headerlink" title="5. 配置pacman"></a>5. 配置<code>pacman</code></h2><pre><code class="bash">$ nano /etc/pacman.conf
+</code></pre>
 <ul>
-<li>安装好Arch Linux系统</li>
-<li>安装好git来获取此repo</li>
+<li><p>去掉注释：</p>
+</li>
+<li><p><code>Color</code></p>
+</li>
+<li><p><code>Arch Linux</code>软件源列表：<code>/etc/pacman.d/mirrorlist</code></p>
+</li>
+<li><p>寻找中国的服务器，将它移动到<code>mirrorlist</code>的最顶上，保存退出。</p>
+</li>
+<li><p>我这里使用的是清华的源：</p>
+<pre><code>## China
+Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+</code></pre>
+</li>
 </ul>
-<p><strong>发行版选择</strong>    </p>
-<p>可以选择Arch-Based桌面发行版(建议选择<a target="_blank" rel="noopener" href="https://manjaro.org/download/">Manjaro XFCE</a>)，或根据install.sh中的执行顺序使用UEFI启动方式安装原生Arch Linux<br>install.sh中分区、visudo等操作需要根据实际情况操作，有相应注释提示</p>
-<p><strong>运行脚本</strong></p>
-<pre><code class="bash">cd ~ # 一定要在~下clone
-git clone https://github.com/guerbai/ohmyarch
-cd ohmyarch
-chmod +x init.sh
-bash init.sh
+<h2 id="6-使用pacstrap安装Arch-Linux基础至磁盘中"><a href="#6-使用pacstrap安装Arch-Linux基础至磁盘中" class="headerlink" title="6. 使用pacstrap安装Arch Linux基础至磁盘中"></a>6. 使用<code>pacstrap</code>安装Arch Linux基础至磁盘中</h2><h3 id="6-1-查看当前的磁盘"><a href="#6-1-查看当前的磁盘" class="headerlink" title="6.1 查看当前的磁盘"></a>6.1 查看当前的磁盘</h3><pre><code class="bash">$ fdisk -l
 </code></pre>
-<p><strong>命令支持</strong></p>
-<p>由于国内网络环境问题，安装ohmyzsh或suckless软件时可能会出现超时，可使用如下命令检测安装完成情况：</p>
-<pre><code class="bash">bash init.sh check
+<h3 id="6-2-挂载磁盘"><a href="#6-2-挂载磁盘" class="headerlink" title="6.2 挂载磁盘"></a>6.2 挂载磁盘</h3><pre><code class="bash">$ mount /dev/sda2 /mnt        # 挂载主分区
+$ mkdir /mnt/boot             # 创建启动分区在Live CD上的目录
+$ mount /dev/sda1 /mnt/boot   # 挂载启动分区
 </code></pre>
-<p>若某一项安装出错可使用具体参数重试，具体见<a target="_blank" rel="noopener" href="https://github.com/guerbai/ohmyarch/blob/master/init.sh">代码</a>，比如上述情况，再分别运行：</p>
-<pre><code class="bash">bash init.sh suckless
-bash init.sh ohmyzsh
+<h3 id="6-3-开始安装"><a href="#6-3-开始安装" class="headerlink" title="6.3 开始安装"></a>6.3 开始安装</h3><pre><code class="bash">$ pacstrap /mnt base linux linux-firmware   # 安装Linux所需的最基础的软件、框架等
 </code></pre>
-<p><strong>启动DWM</strong></p>
-<p>Arch-Based发行版，可重启电脑/注销用户，在登录界面选择Dwm<br>原生Arch Linux在重启电脑后，输入<code>startx</code></p>
-<p>DWM基本生存指南见<a target="_blank" rel="noopener" href="https://gitlab.com/dwt1/dwm-distrotube">DWM</a></p>
-<p><strong>neovim配置</strong><br>不会自动配置neovim，可以手动执行，具体配置说明见<a target="_blank" rel="noopener" href="https://github.com/guerbai/vim-ide-solution">vim-ide-solution</a></p>
-<pre><code class="bash">bash init.sh neovim
+<h3 id="6-4-生成挂载文件"><a href="#6-4-生成挂载文件" class="headerlink" title="6.4 生成挂载文件"></a>6.4 生成挂载文件</h3><pre><code class="bash">$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 </code></pre>
-<h2 id="Arch-Linux测试情况"><a href="#Arch-Linux测试情况" class="headerlink" title="Arch Linux测试情况"></a>Arch Linux测试情况</h2><p>其实没有必要纠结具体是哪个桌面发行版，因为用了suckless这些软件后所有的发行版都长一个样🤣</p>
-<table>
-<thead>
-<tr>
-<th>发行版</th>
-<th>测试情况</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Arch Linux</td>
-<td>一切正常</td>
-</tr>
-<tr>
-<td>Manjaro XFCE</td>
-<td>一切正常</td>
-</tr>
-<tr>
-<td>Garuda KDE</td>
-<td>一切正常</td>
-</tr>
-<tr>
-<td>Endeavour os</td>
-<td>一切正常</td>
-</tr>
-<tr>
-<td>Manjaro Gnome</td>
-<td>base-devel无法安装，有<code>pacman-contrib</code>的依赖不兼容问题</td>
-</tr>
-<tr>
-<td>Archcraft</td>
-<td>无法调节分辨率为1920x1080</td>
-</tr>
-<tr>
-<td>Chakra</td>
-<td>无法调节分辨率为1920x1080</td>
-</tr>
-<tr>
-<td>Artix</td>
-<td>无法正常安装中文输入法，target not found，此发行版需要特殊的源配置</td>
-</tr>
-</tbody></table>
-<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><ul>
-<li>直接使用了<a target="_blank" rel="noopener" href="https://gitlab.com/dwt1">DistroTube</a>的suckless软件配置并对字体大小稍做微调</li>
-<li>从<a target="_blank" rel="noopener" href="https://www.youtube.com/c/DistroTube">DistroTube</a>制作的视频中了解到了Tiling Window Manager等概念与基本用法</li>
-<li>编写脚本过程中时常参考阮一峰编写的<a href="">Bash 脚本教程</a></li>
-</ul>
+<h2 id="7-使用arch-chroot对安装好的系统进行配置"><a href="#7-使用arch-chroot对安装好的系统进行配置" class="headerlink" title="7. 使用arch-chroot对安装好的系统进行配置"></a>7. 使用<code>arch-chroot</code>对安装好的系统进行配置</h2><h3 id="7-1-进入arch-chroot"><a href="#7-1-进入arch-chroot" class="headerlink" title="7.1 进入arch-chroot"></a>7.1 进入<code>arch-chroot</code></h3><pre><code class="bash">$ arch-chroot /mnt   # /mnt为安装好的系统的主分区在Live CD上的挂载位置
+</code></pre>
+<h3 id="7-2-设置时区和时间"><a href="#7-2-设置时区和时间" class="headerlink" title="7.2 设置时区和时间"></a>7.2 设置时区和时间</h3><pre><code class="bash">$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime   # 创建链接
+$ hwclock --systohc                                         # 同步时间
+</code></pre>
+<h3 id="7-3-编辑本地化的文件"><a href="#7-3-编辑本地化的文件" class="headerlink" title="7.3 编辑本地化的文件"></a>7.3 编辑本地化的文件</h3><pre><code class="bash">$ exit                       # 先退出arch-chroot
+$ nano /mnt/etc/locale.gen   # 编辑本地化文件
+                             # 去掉“en_US.UTF-8 UTF-8”前面的注释，保存退出         
+</code></pre>
+<h3 id="7-4-生成本地化"><a href="#7-4-生成本地化" class="headerlink" title="7.4 生成本地化"></a>7.4 生成本地化</h3><pre><code class="bash">$ arch-chroot /mnt
+$ locale-gen   # 生成本地化
+</code></pre>
+<h3 id="7-5-设置语言"><a href="#7-5-设置语言" class="headerlink" title="7.5 设置语言"></a>7.5 设置语言</h3><pre><code class="bash">$ exit                        # 退出arch-chroot
+$ nano /mnt/etc/locale.conf   # 编辑本地化的配置文件
+                              # 在其中输入“LANG=en_US.UTF-8”（将系统设置为英文），保存退出。
+</code></pre>
+<h3 id="7-6-可选-设置键盘布局和键位绑定"><a href="#7-6-可选-设置键盘布局和键位绑定" class="headerlink" title="7.6 (可选)设置键盘布局和键位绑定"></a>7.6 (可选)设置键盘布局和键位绑定</h3><pre><code class="bash">$ nano /mnt/etc/vconsole.conf
+</code></pre>
+<h3 id="7-7-编辑网络相关的文件"><a href="#7-7-编辑网络相关的文件" class="headerlink" title="7.7 编辑网络相关的文件"></a>7.7 编辑网络相关的文件</h3><pre><code class="bash">$ nano /mnt/etc/hostname   # 编辑主机名称
+                           # 我将其设置为niklaus，保存退出
+$ nano /mnt/etc/hosts      # 编辑域名与IP地址的对应
+                           # 127.0.0.1   localhost
+                           # ::1         localhost
+                           # 127.0.1.1   niklaus.localdomain   niklaus
+</code></pre>
+<h3 id="7-8-更改root用户密码"><a href="#7-8-更改root用户密码" class="headerlink" title="7.8 更改root用户密码"></a>7.8 更改<code>root</code>用户密码</h3><pre><code class="bash">$ arch-chroot /mnt
+$ passwd
+</code></pre>
+<h3 id="7-9-安装grub相关"><a href="#7-9-安装grub相关" class="headerlink" title="7.9 安装grub相关"></a>7.9 安装<code>grub</code>相关</h3><pre><code class="bash">$ pacman -S grub efibootmgr intel-ucode os-prober
+# intel-ucode   厂家更新CPU驱动用，如果是AMD的显卡，则安装amd-ucode
+# os-probe      用来寻找电脑中其他操作系统
+$ mkdir /boot/grub
+$ grub-mkconfig &gt; /boot/grub/grub.cfg                      # 生成grub配置文件
+$ uname -m                                                 # 查看系统架构
+$ grub-install --target=x86_64-efi --efi-directory=/boot   # 根据自己的系统架构安装grub
+</code></pre>
+<h3 id="7-10-安装基础工具"><a href="#7-10-安装基础工具" class="headerlink" title="7.10 安装基础工具"></a>7.10 安装基础工具</h3><pre><code class="bash">$ pacman -S zsh nano vim wpa_supplicant wireless_tools dhcpcd
+# zsh              shell
+# nano             编辑器
+# vim              编辑器
+# wpa_supplicant   上网工具
+# wireless_tools   无线上网工具
+# dhcpcd           动态分配IP地址工具
+</code></pre>
+<h3 id="7-11-重启，完成安装"><a href="#7-11-重启，完成安装" class="headerlink" title="7.11 重启，完成安装"></a>7.11 重启，完成安装</h3><pre><code class="bash">$ exit                            # 退出arch-chroot
+$ killall wpa_supplicant dhcpcd   # 终止掉网络相关的进程
+$ reboot                          # 重启，电脑黑屏后就可以拔掉Live CD了
+</code></pre>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 94411674@qq.com </span>
