@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://anlinfx.github.io/2021/11/04/%E6%B2%A7%E6%B5%B7%E4%B8%80%E5%A3%B0%E7%AC%91/1.jpeg">
 <meta property="og:image" content="https://anlinfx.github.io/2021/11/04/%E6%B2%A7%E6%B5%B7%E4%B8%80%E5%A3%B0%E7%AC%91/2.jpeg">
 <meta property="article:published_time" content="2021-11-04T08:57:46.000Z">
-<meta property="article:modified_time" content="2021-11-04T09:24:21.867Z">
+<meta property="article:modified_time" content="2021-11-04T09:53:34.546Z">
 <meta property="article:author" content="萧寒">
 <meta property="article:tag" content="读书">
 <meta name="twitter:card" content="summary">
@@ -764,7 +764,7 @@ ENTRYPOINT [ &quot;curl&quot;, &quot;-s&quot;, &quot;http://ip.cn&quot; ]
 </code></pre>
 <p>这是因为当存在 ENTRYPOINT 后，CMD 的内容将会作为参数传给 ENTRYPOINT，而这里 -i 就是新的 CMD，因此会作为参数传给 curl，从而达到了我们预期的效果。</p>
 </li>
-<li><p>场景二：应用运行前的准备工作<br>可以写一个脚本，然后放入 ENTRYPOINT 中去执行，而这个脚本会将接到的参数（也就是 <CMD>）作为命令，在脚本最后执行。比如官方镜像 redis 中就是这么做的：<br>```bash<br>FROM alpine:3.4<br>…<br>RUN addgroup -S redis &amp;&amp; adduser -S -G redis redis<br>…<br>ENTRYPOINT [“docker-entrypoint.sh”]</p>
+<li><p>场景二：应用运行前的准备工作<br>可以写一个脚本，然后放入 ENTRYPOINT 中去执行，而这个脚本会将接到的参数（也就是 <CMD>）作为命令，在脚本最后执行。比如官方镜像 redis 中就是这么做的：<br>```bash<br>FROM alpine:3.4<br>…<br>RUN addgroup -S redis &amp;&amp; adduser -S -G redis redis<br>…<br>ENTRYPOINT [“docker-entrypoint.sh”]</CMD></p>
 </li>
 </ol>
 <p>EXPOSE 6379<br>CMD [ “redis-server” ]</p>
