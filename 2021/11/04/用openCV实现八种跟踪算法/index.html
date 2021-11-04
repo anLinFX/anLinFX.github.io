@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Archlinux-系统安装 | 萧寒个人站</title>
-  <meta name="keywords" content=" linux ">
-  <meta name="description" content="Archlinux-系统安装 | 萧寒个人站">
+  <title>用openCV实现八种跟踪算法 | 萧寒个人站</title>
+  <meta name="keywords" content=" 后端 ">
+  <meta name="description" content="用openCV实现八种跟踪算法 | 萧寒个人站">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="用 OpenCV 实现八种不同的目标跟踪算法1、BOOSTING Tracker 和Haar cascades（AdaBoost）背后所用的机器学习算法相同，但是距其诞生已有十多年了。这一追踪器速度较慢，并且表现不好，但是作为元老还是有必要提及的。（最低支持OpenCV 3.0.0） 2、MIL Tracker 比上一个追踪器更精确，但是失败率比较高。（最低支持OpenCV 3.4.0） 3、KC">
 <meta property="og:type" content="article">
@@ -611,9 +611,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Archlinux-系统安装" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-用openCV实现八种跟踪算法" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Archlinux-系统安装</h1>
+        <h1 class="article-title">用openCV实现八种跟踪算法</h1>
     
     <div class="article-meta">
         
@@ -623,9 +623,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="系统">系统</a> > 
+            <a  data-rel="后端">后端</a> > 
             
-            <a  data-rel="系统&lt;---&gt;linux">linux</a>
+            <a  data-rel="后端&lt;---&gt;算法">算法</a>
             
         </span>
         
@@ -633,19 +633,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color1">linux</a>
+            <a class="color3">后端</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-11-04 01:32:19'>2021-11-04 01:30</time>
+            Created At : <time class="date" title='Updated At: 2021-11-04 13:04:18'>2021-11-04 12:59</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.1k</span>
+        <span>Count:638</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -664,7 +664,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85"><span class="toc-text">系统安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BF%AE%E6%94%B9tty%E7%95%8C%E9%9D%A2%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93"><span class="toc-text">1. 修改tty界面下的字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C"><span class="toc-text">2. 连接网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C"><span class="toc-text">2.1 无线网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E6%89%AB%E6%8F%8F%E5%BD%93%E5%89%8D%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%BE%E5%A4%87"><span class="toc-text">2.1.1 扫描当前互联网设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E5%90%AF%E7%94%A8%E8%AE%BE%E5%A4%87"><span class="toc-text">2.1.2 启用设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-3-%E6%89%AB%E6%8F%8F%E5%BD%93%E5%89%8D%E8%AE%BE%E5%A4%87%E4%B8%8B%E7%9A%84WiFi%E5%88%97%E8%A1%A8%E5%B9%B6%E5%BE%97%E5%88%B0%E6%89%80%E6%9C%89WiFi%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-text">2.1.3 扫描当前设备下的WiFi列表并得到所有WiFi的名字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-4-%E4%BD%BF%E7%94%A8wpa-supplicant%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C%E5%B9%B6%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C"><span class="toc-text">2.1.4 使用wpa_supplicant连接网络并后台运行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-5-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8DIP%E5%9C%B0%E5%9D%80"><span class="toc-text">2.1.5 动态分配IP地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%9C%89%E7%BA%BF%E7%BD%91%E7%BB%9C"><span class="toc-text">2.2 有线网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-%E5%90%AF%E7%94%A8%E8%AE%BE%E5%A4%87"><span class="toc-text">2.2.1 启用设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8DIP%E5%9C%B0%E5%9D%80"><span class="toc-text">2.2.2 动态分配IP地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%B5%8B%E8%AF%95"><span class="toc-text">2.3 测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9B%B4%E6%AD%A3%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4"><span class="toc-text">3. 更正系统时间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA"><span class="toc-text">4. 硬盘分区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%9F%A5%E7%9C%8B%E7%8E%B0%E6%9C%89%E7%9A%84%E7%A3%81%E7%9B%98"><span class="toc-text">4.1 查看现有的磁盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E8%BF%9B%E5%85%A5%E7%A3%81%E7%9B%98%E7%BC%96%E8%BE%91"><span class="toc-text">4.2 进入磁盘编辑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E5%AE%9A%E4%B9%89%E5%88%86%E5%8C%BA%E6%A0%BC%E5%BC%8F"><span class="toc-text">4.3 定义分区格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E6%89%93%E5%BC%80SWAP"><span class="toc-text">4.4 打开SWAP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%85%8D%E7%BD%AEpacman"><span class="toc-text">5. 配置pacman</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E4%BD%BF%E7%94%A8pacstrap%E5%AE%89%E8%A3%85Arch-Linux%E5%9F%BA%E7%A1%80%E8%87%B3%E7%A3%81%E7%9B%98%E4%B8%AD"><span class="toc-text">6. 使用pacstrap安装Arch Linux基础至磁盘中</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%9A%84%E7%A3%81%E7%9B%98"><span class="toc-text">6.1 查看当前的磁盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98"><span class="toc-text">6.2 挂载磁盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85"><span class="toc-text">6.3 开始安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-%E7%94%9F%E6%88%90%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="toc-text">6.4 生成挂载文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E4%BD%BF%E7%94%A8arch-chroot%E5%AF%B9%E5%AE%89%E8%A3%85%E5%A5%BD%E7%9A%84%E7%B3%BB%E7%BB%9F%E8%BF%9B%E8%A1%8C%E9%85%8D%E7%BD%AE"><span class="toc-text">7. 使用arch-chroot对安装好的系统进行配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E8%BF%9B%E5%85%A5arch-chroot"><span class="toc-text">7.1 进入arch-chroot</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA%E5%92%8C%E6%97%B6%E9%97%B4"><span class="toc-text">7.2 设置时区和时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E7%BC%96%E8%BE%91%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">7.3 编辑本地化的文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-%E7%94%9F%E6%88%90%E6%9C%AC%E5%9C%B0%E5%8C%96"><span class="toc-text">7.4 生成本地化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-%E8%AE%BE%E7%BD%AE%E8%AF%AD%E8%A8%80"><span class="toc-text">7.5 设置语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-6-%E5%8F%AF%E9%80%89-%E8%AE%BE%E7%BD%AE%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80%E5%92%8C%E9%94%AE%E4%BD%8D%E7%BB%91%E5%AE%9A"><span class="toc-text">7.6 (可选)设置键盘布局和键位绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-7-%E7%BC%96%E8%BE%91%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">7.7 编辑网络相关的文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-8-%E6%9B%B4%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81"><span class="toc-text">7.8 更改root用户密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-9-%E5%AE%89%E8%A3%85grub%E7%9B%B8%E5%85%B3"><span class="toc-text">7.9 安装grub相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-10-%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E5%B7%A5%E5%85%B7"><span class="toc-text">7.10 安装基础工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-11-%E9%87%8D%E5%90%AF%EF%BC%8C%E5%AE%8C%E6%88%90%E5%AE%89%E8%A3%85"><span class="toc-text">7.11 重启，完成安装</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8-OpenCV-%E5%AE%9E%E7%8E%B0%E5%85%AB%E7%A7%8D%E4%B8%8D%E5%90%8C%E7%9A%84%E7%9B%AE%E6%A0%87%E8%B7%9F%E8%B8%AA%E7%AE%97%E6%B3%95"><span class="toc-text">用 OpenCV 实现八种不同的目标跟踪算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E5%8A%A8%E6%89%8B"><span class="toc-text">开始动手</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -680,131 +680,78 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h1><h2 id="1-修改tty界面下的字体"><a href="#1-修改tty界面下的字体" class="headerlink" title="1. 修改tty界面下的字体"></a>1. 修改<code>tty</code>界面下的字体</h2><ul>
-<li><p>所有字体都存放在<code>/usr/share/kbd/consolefonts</code>目录下。</p>
-</li>
-<li><p>这里将其设置为：</p>
-<pre><code class="bash">$ setfont /usr/share/kbd/consolefonts/LatGrkCyr-12*22.psfu.gz
+        <h1 id="用-OpenCV-实现八种不同的目标跟踪算法"><a href="#用-OpenCV-实现八种不同的目标跟踪算法" class="headerlink" title="用 OpenCV 实现八种不同的目标跟踪算法"></a>用 OpenCV 实现八种不同的目标跟踪算法</h1><p><strong>1、BOOSTING Tracker</strong></p>
+<p>和Haar cascades（AdaBoost）背后所用的机器学习算法相同，但是距其诞生已有十多年了。这一追踪器速度较慢，并且表现不好，但是作为元老还是有必要提及的。（最低支持<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?from=pc_blog_highlight&q=OpenCV">OpenCV</a> 3.0.0）</p>
+<p><strong>2、MIL Tracker</strong></p>
+<p>比上一个追踪器更精确，但是失败率比较高。（最低支持OpenCV 3.4.0）</p>
+<p><strong>3、KCF Tracker</strong></p>
+<p>比BOOSTING和MIL都快，但是在有遮挡的情况下表现不佳。（最低支持OpenCV 3.1.0）</p>
+<p><strong>4、CSRT Tracker</strong></p>
+<p>比KCF稍精确，但速度不如后者。（最低支持OpenCV 3.4.2）</p>
+<p><strong>5、MedianFlow Tracker</strong></p>
+<p>在报错方面表现得很好，但是对于快速跳动或快速移动的物体，模型会失效。（最低支持OpenCV 3.4.0）</p>
+<p><strong>6、TLD Tracker</strong></p>
+<p>我不确定是不是OpenCV和TLD有什么不兼容的问题，但是TLD的误报非常多，所以不推荐。（最低支持OpenCV 3.4.0）</p>
+<p><strong>7、MOSSE Tracker</strong></p>
+<p>速度真心快，但是不如CSRT和KCF的准确率那么高，如果追求速度选它准没错。（最低支持OpenCV 3.4.1）</p>
+<p><strong>8、GOTURN Tracker</strong></p>
+<p>这是OpenCV中唯一一深度学习为基础的目标检测器。它需要额外的模型才能运行，本文不详细讲解。（最低支持OpenCV 3.2.0）</p>
+<p>我个人的建议：</p>
+<p>如果追求高准确度，又能忍受慢一些的速度，那么就用CSRT<br>如果对准确度的要求不苛刻，想追求速度，那么就选KCF<br>纯粹想节省时间就用MOSSE</p>
+<p>从OpenCV 3开始，目标检测器得到了快速发展，下表总结了不同版本的OpenCV中可适用的追踪器：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200720112546781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RwbG92ZWw=,size_16,color_FFFFFF,t_70" alt="img"></p>
+<h3 id="开始动手"><a href="#开始动手" class="headerlink" title="开始动手"></a>开始动手</h3><p>想要用OpenCV进行目标追踪，首先打开一个新文件，将它命名为opencv_object_tracker.py，然后插入以下代码：</p>
+<pre><code class="haskell">#import the necessary packages
+
+
+
+from imutils.video import VideoStream
+
+
+
+from imutils.video import FPS
+
+
+
+import argparse
+
+
+
+import imutils
+
+
+
+import time
+
+
+
+import cv2
 </code></pre>
-</li>
-</ul>
-<h2 id="2-连接网络"><a href="#2-连接网络" class="headerlink" title="2. 连接网络"></a>2. 连接网络</h2><h3 id="2-1-无线网络"><a href="#2-1-无线网络" class="headerlink" title="2.1 无线网络"></a>2.1 无线网络</h3><h4 id="2-1-1-扫描当前互联网设备"><a href="#2-1-1-扫描当前互联网设备" class="headerlink" title="2.1.1 扫描当前互联网设备"></a>2.1.1 扫描当前互联网设备</h4><pre><code class="bash">$ ip link
+<p>然后开始分析命令行参数：</p>
+<pre><code class="python">ap = argparse.ArgumentParser()
+
+
+
+ap.add_argument(&quot;-V&quot;, &quot;--Video&quot;,type=str,
+
+
+
+    help=&quot;path to input video file&quot;)
+
+
+
+ap.add_argument(&quot;-t&quot;, &quot;--tracker&quot;,type=str,default=&quot;kcf&quot;,
+
+
+
+    help=&quot;OpenCV object tracker type&quot;)
+
+
+
+args = vars(ap.parse_args())
 </code></pre>
-<h4 id="2-1-2-启用设备"><a href="#2-1-2-启用设备" class="headerlink" title="2.1.2 启用设备"></a>2.1.2 启用设备</h4><pre><code class="bash">$ ip link set 设备名 up
-</code></pre>
-<h4 id="2-1-3-扫描当前设备下的WiFi列表并得到所有WiFi的名字"><a href="#2-1-3-扫描当前设备下的WiFi列表并得到所有WiFi的名字" class="headerlink" title="2.1.3 扫描当前设备下的WiFi列表并得到所有WiFi的名字"></a>2.1.3 扫描当前设备下的WiFi列表并得到所有WiFi的名字</h4><pre><code class="bash">$ iwlist 设备名 scan | grep ESSID
-</code></pre>
-<h4 id="2-1-4-使用wpa-supplicant连接网络并后台运行"><a href="#2-1-4-使用wpa-supplicant连接网络并后台运行" class="headerlink" title="2.1.4 使用wpa_supplicant连接网络并后台运行"></a>2.1.4 使用<code>wpa_supplicant</code>连接网络并后台运行</h4><pre><code class="bash">$ wpa_passphrase 网络名 密码 &gt; internet.conf
-$ wpa_supplicant -c internet.conf -i 设备名 &amp;
-</code></pre>
-<h4 id="2-1-5-动态分配IP地址"><a href="#2-1-5-动态分配IP地址" class="headerlink" title="2.1.5 动态分配IP地址"></a>2.1.5 动态分配IP地址</h4><pre><code class="bash">$ dhcpcd &amp;
-</code></pre>
-<h3 id="2-2-有线网络"><a href="#2-2-有线网络" class="headerlink" title="2.2 有线网络"></a>2.2 有线网络</h3><h4 id="2-2-1-启用设备"><a href="#2-2-1-启用设备" class="headerlink" title="2.2.1 启用设备"></a>2.2.1 启用设备</h4><pre><code class="bash">$ ip link set 设备名 up
-</code></pre>
-<h4 id="2-2-2-动态分配IP地址"><a href="#2-2-2-动态分配IP地址" class="headerlink" title="2.2.2 动态分配IP地址"></a>2.2.2 动态分配IP地址</h4><pre><code class="bash">$ dhcpcd &amp;
-</code></pre>
-<h3 id="2-3-测试"><a href="#2-3-测试" class="headerlink" title="2.3 测试"></a>2.3 测试</h3><pre><code class="bash">$ ping www.baidu.com
-</code></pre>
-<h2 id="3-更正系统时间"><a href="#3-更正系统时间" class="headerlink" title="3. 更正系统时间"></a>3. 更正系统时间</h2><pre><code class="bash">$ timedatectl set-ntp true
-</code></pre>
-<h2 id="4-硬盘分区"><a href="#4-硬盘分区" class="headerlink" title="4. 硬盘分区"></a>4. 硬盘分区</h2><ul>
-<li>这里我采用的启动方式是<code>UEFI + GPT</code>，其他的启动方式请参考<a href="system-installation-trouble-shooting.md/#2-%E5%85%B3%E4%BA%8Egrub%E5%92%8C%E5%88%86%E5%8C%BA">下文</a>。</li>
-</ul>
-<h3 id="4-1-查看现有的磁盘"><a href="#4-1-查看现有的磁盘" class="headerlink" title="4.1 查看现有的磁盘"></a>4.1 查看现有的磁盘</h3><pre><code class="bash">$ fdisk -l
-</code></pre>
-<h3 id="4-2-进入磁盘编辑"><a href="#4-2-进入磁盘编辑" class="headerlink" title="4.2 进入磁盘编辑"></a>4.2 进入磁盘编辑</h3><pre><code class="bash">$ fdisk /dev/sda   # /dev/sda为磁盘设备的位置
-$ g   # 清除原有分区并创建一个GPT分区表
-$ n   # 创建一个新的分区/dev/sda1 -- 引导分区
-      # 接下来选择分区的编号、起始位置、终止位置（分区大小，可用例如“+300M”的形式）
-$ n   # 创建一个新的分区/dev/sda3 -- SWAP分区（用于保存内存中的文件以及作为内存的扩展，此
-      # 分区不需要太大）
-      # 这里我大小设置为1G
-$ n   # 创建一个新的分区/dev/sda2 -- 主分区
-      # 大小我设置为磁盘的所有剩余空间
-$ p   # 查看待写入的分区结果
-$ w   # 写入
-</code></pre>
-<h3 id="4-3-定义分区格式"><a href="#4-3-定义分区格式" class="headerlink" title="4.3 定义分区格式"></a>4.3 定义分区格式</h3><pre><code class="bash">$ mkfs.fat -F32 /dev/sda1   # /dev/sda1为引导分区
-$ mkfs.ext4 /dev/sda2       # /dev/sda2为主分区
-$ mkswap /dev/sda3          # /dev/sda3为SWAP分区
-</code></pre>
-<h3 id="4-4-打开SWAP"><a href="#4-4-打开SWAP" class="headerlink" title="4.4 打开SWAP"></a>4.4 打开<code>SWAP</code></h3><pre><code class="bash">$ swapon /dev/sda3
-</code></pre>
-<h2 id="5-配置pacman"><a href="#5-配置pacman" class="headerlink" title="5. 配置pacman"></a>5. 配置<code>pacman</code></h2><pre><code class="bash">$ nano /etc/pacman.conf
-</code></pre>
-<ul>
-<li><p>去掉注释：</p>
-</li>
-<li><p><code>Color</code></p>
-</li>
-<li><p><code>Arch Linux</code>软件源列表：<code>/etc/pacman.d/mirrorlist</code></p>
-</li>
-<li><p>寻找中国的服务器，将它移动到<code>mirrorlist</code>的最顶上，保存退出。</p>
-</li>
-<li><p>我这里使用的是清华的源：</p>
-<pre><code>## China
-Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-</code></pre>
-</li>
-</ul>
-<h2 id="6-使用pacstrap安装Arch-Linux基础至磁盘中"><a href="#6-使用pacstrap安装Arch-Linux基础至磁盘中" class="headerlink" title="6. 使用pacstrap安装Arch Linux基础至磁盘中"></a>6. 使用<code>pacstrap</code>安装Arch Linux基础至磁盘中</h2><h3 id="6-1-查看当前的磁盘"><a href="#6-1-查看当前的磁盘" class="headerlink" title="6.1 查看当前的磁盘"></a>6.1 查看当前的磁盘</h3><pre><code class="bash">$ fdisk -l
-</code></pre>
-<h3 id="6-2-挂载磁盘"><a href="#6-2-挂载磁盘" class="headerlink" title="6.2 挂载磁盘"></a>6.2 挂载磁盘</h3><pre><code class="bash">$ mount /dev/sda2 /mnt        # 挂载主分区
-$ mkdir /mnt/boot             # 创建启动分区在Live CD上的目录
-$ mount /dev/sda1 /mnt/boot   # 挂载启动分区
-</code></pre>
-<h3 id="6-3-开始安装"><a href="#6-3-开始安装" class="headerlink" title="6.3 开始安装"></a>6.3 开始安装</h3><pre><code class="bash">$ pacstrap /mnt base linux linux-firmware   # 安装Linux所需的最基础的软件、框架等
-</code></pre>
-<h3 id="6-4-生成挂载文件"><a href="#6-4-生成挂载文件" class="headerlink" title="6.4 生成挂载文件"></a>6.4 生成挂载文件</h3><pre><code class="bash">$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</code></pre>
-<h2 id="7-使用arch-chroot对安装好的系统进行配置"><a href="#7-使用arch-chroot对安装好的系统进行配置" class="headerlink" title="7. 使用arch-chroot对安装好的系统进行配置"></a>7. 使用<code>arch-chroot</code>对安装好的系统进行配置</h2><h3 id="7-1-进入arch-chroot"><a href="#7-1-进入arch-chroot" class="headerlink" title="7.1 进入arch-chroot"></a>7.1 进入<code>arch-chroot</code></h3><pre><code class="bash">$ arch-chroot /mnt   # /mnt为安装好的系统的主分区在Live CD上的挂载位置
-</code></pre>
-<h3 id="7-2-设置时区和时间"><a href="#7-2-设置时区和时间" class="headerlink" title="7.2 设置时区和时间"></a>7.2 设置时区和时间</h3><pre><code class="bash">$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime   # 创建链接
-$ hwclock --systohc                                         # 同步时间
-</code></pre>
-<h3 id="7-3-编辑本地化的文件"><a href="#7-3-编辑本地化的文件" class="headerlink" title="7.3 编辑本地化的文件"></a>7.3 编辑本地化的文件</h3><pre><code class="bash">$ exit                       # 先退出arch-chroot
-$ nano /mnt/etc/locale.gen   # 编辑本地化文件
-                             # 去掉“en_US.UTF-8 UTF-8”前面的注释，保存退出         
-</code></pre>
-<h3 id="7-4-生成本地化"><a href="#7-4-生成本地化" class="headerlink" title="7.4 生成本地化"></a>7.4 生成本地化</h3><pre><code class="bash">$ arch-chroot /mnt
-$ locale-gen   # 生成本地化
-</code></pre>
-<h3 id="7-5-设置语言"><a href="#7-5-设置语言" class="headerlink" title="7.5 设置语言"></a>7.5 设置语言</h3><pre><code class="bash">$ exit                        # 退出arch-chroot
-$ nano /mnt/etc/locale.conf   # 编辑本地化的配置文件
-                              # 在其中输入“LANG=en_US.UTF-8”（将系统设置为英文），保存退出。
-</code></pre>
-<h3 id="7-6-可选-设置键盘布局和键位绑定"><a href="#7-6-可选-设置键盘布局和键位绑定" class="headerlink" title="7.6 (可选)设置键盘布局和键位绑定"></a>7.6 (可选)设置键盘布局和键位绑定</h3><pre><code class="bash">$ nano /mnt/etc/vconsole.conf
-</code></pre>
-<h3 id="7-7-编辑网络相关的文件"><a href="#7-7-编辑网络相关的文件" class="headerlink" title="7.7 编辑网络相关的文件"></a>7.7 编辑网络相关的文件</h3><pre><code class="bash">$ nano /mnt/etc/hostname   # 编辑主机名称
-                           # 我将其设置为niklaus，保存退出
-$ nano /mnt/etc/hosts      # 编辑域名与IP地址的对应
-                           # 127.0.0.1   localhost
-                           # ::1         localhost
-                           # 127.0.1.1   niklaus.localdomain   niklaus
-</code></pre>
-<h3 id="7-8-更改root用户密码"><a href="#7-8-更改root用户密码" class="headerlink" title="7.8 更改root用户密码"></a>7.8 更改<code>root</code>用户密码</h3><pre><code class="bash">$ arch-chroot /mnt
-$ passwd
-</code></pre>
-<h3 id="7-9-安装grub相关"><a href="#7-9-安装grub相关" class="headerlink" title="7.9 安装grub相关"></a>7.9 安装<code>grub</code>相关</h3><pre><code class="bash">$ pacman -S grub efibootmgr intel-ucode os-prober
-# intel-ucode   厂家更新CPU驱动用，如果是AMD的显卡，则安装amd-ucode
-# os-probe      用来寻找电脑中其他操作系统
-$ mkdir /boot/grub
-$ grub-mkconfig &gt; /boot/grub/grub.cfg                      # 生成grub配置文件
-$ uname -m                                                 # 查看系统架构
-$ grub-install --target=x86_64-efi --efi-directory=/boot   # 根据自己的系统架构安装grub
-</code></pre>
-<h3 id="7-10-安装基础工具"><a href="#7-10-安装基础工具" class="headerlink" title="7.10 安装基础工具"></a>7.10 安装基础工具</h3><pre><code class="bash">$ pacman -S zsh nano vim wpa_supplicant wireless_tools dhcpcd
-# zsh              shell
-# nano             编辑器
-# vim              编辑器
-# wpa_supplicant   上网工具
-# wireless_tools   无线上网工具
-# dhcpcd           动态分配IP地址工具
-</code></pre>
-<h3 id="7-11-重启，完成安装"><a href="#7-11-重启，完成安装" class="headerlink" title="7.11 重启，完成安装"></a>7.11 重启，完成安装</h3><pre><code class="bash">$ exit                            # 退出arch-chroot
-$ killall wpa_supplicant dhcpcd   # 终止掉网络相关的进程
-$ reboot                          # 重启，电脑黑屏后就可以拔掉Live CD了
-</code></pre>
+<p>我们的命令行参数包括：</p>
+<p>–video：到达输入视频文件的替代路线。如果该参数失效，那么脚本将会使用你的网络摄像头。<br>–tracker：假设默认追踪器设置的是kcf，一整列可能的追踪器代码表示下一个代码块或下方的部分。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 94411674@qq.com </span>
